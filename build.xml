@@ -3,7 +3,7 @@
     <description>Example of using envjs, rhino and Jasmine Reporters together from ant</description>
 
     <target name="run-all">
-        <java jar="lib/js.jar" fork="true">
+        <java jar="lib/js.jar" fork="true" failonerror="true">
         	<arg value="-opt"/>
         	<arg value="-1"/>
         	<arg value="lib/envjs.bootstrap.js"/>
